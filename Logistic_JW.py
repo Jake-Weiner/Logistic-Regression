@@ -128,7 +128,7 @@ def cross_validation(dataset,k_folds,n_epochs,learning_rate):
     print 'average accuracy is {}'.format(acc_total/float(k_folds))
 
 def main():
-    dataset = load_dataset(r'C:\Users\weineja\Documents\Machine Learning\ML Data\pima_diabetes.txt')
+    dataset = load_dataset(r'C:\xxx\Documents\Machine Learning\ML Data\pima_diabetes.txt')
     dataset_cleanse(dataset)
     normalize_dataset(dataset,dataset_minmax(dataset))
     cross_validation(dataset,10,100,0.5)
